@@ -31,7 +31,7 @@
 
                                 <div class="_social_login">
                                     <a href="#" class="_sc_group _fb_group"><i class="fa fa-facebook"></i> <span>Hoặc đăng nhập bằng Facebook</span></a>
-                                    <a href="#" class="_sc_group _gg_group"><i class="fa fa-google-plus"></i> <span>Sign in with Google</span></a>
+                                    <a href="#" class="_sc_group _gg_group"><i class="fa fa-google"></i> <span>Sign in with Google</span></a>
                                 </div>
                             </div>
                         </div>

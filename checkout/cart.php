@@ -22,7 +22,7 @@ include_once 'header.php';
                 <table class="table table-hover cart_table">
                     <thead>
                         <tr>
-                            <th colspan="2">6 sản phẩm</th>
+                            <th colspan="2"><span class="_total_quantity">5</span> sản phẩm</th>
                             <th width="170">Giá</th>
                             <th colspan="2">Số lượng</th>
                         </tr>
@@ -43,8 +43,12 @@ include_once 'header.php';
                             </td>
                             <td class="_ci_price">
                                 <div class="_popup_price _price">
-                                    <div class="dis_price">21.199.000 VND</div>
-                                    <span class="org_price"><del>33.000.000 VND</del> <span class="text-uppercase">40% giảm giá</span></span>
+                                    <?php if ($i % 2 == 0) { ?>
+                                        <div class="dis_price">21.199.000 VND</div>
+                                        <span class="org_price"><del>33.000.000 VND</del> <span class="text-uppercase">40% giảm giá</span></span>
+                                    <?php } else { ?>
+                                        <div class="dis_price">33.000.000 VND</div>
+                                    <?php } ?>
                                 </div>
                             </td>
                             <td class="_ci_quantity">
@@ -81,7 +85,7 @@ include_once 'header.php';
                 <li class="_tbl_border"><span class="_table_col"></span><span class="_table_col"></span></li>
                 <li class="sumary_total">
                     <span class="_table_col"><strong>Thành tiền</strong> (tổng số tiền thanh toán):</span>
-                    <strong class="table_col text-right">1.724.000 VNĐ</strong>
+                    <strong class="_table_col text-right" style="white-space: nowrap;"><span class="_total_price">129.597.000</span> VNĐ</strong>
                 </li>
             </ul>
             <a href="step_1.php" class="_pu_checkout_btn btn btn-block">Tiến hành thanh toán</a>
